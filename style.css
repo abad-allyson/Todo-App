@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  outline: 0.1rem solid black;
+  border-radius: 10px;
+  width: 600px;
+  margin-top: 200px;
+  padding: 30px 50px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 30px 0;
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  gap: 5px;
+}
+
+form input {
+  flex: 1;
+  padding: 5px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+form button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  display: flex;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  background-color: rgb(219, 219, 219);
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+li span {
+  flex: 1;
+  font-size: 1rem;
+}
+
+li svg {
+  cursor: pointer;
+}
+
+li.completed {
+  background-color: rgb(240, 240, 240);
+}
+
+.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
